@@ -10,11 +10,13 @@ import UIKit
 
 class CreateHospitalViewController: UIViewController {
     
+    @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtDireccion: UITextField!
     @IBOutlet weak var txtWebpage: UITextField!
     @IBOutlet weak var txtTelefono: UITextField!
     @IBOutlet weak var lblEstado: UILabel!
+    
     
     @IBAction func createHospital(_ sender: Any) {
         let loc = Locate(coordinates: [-75.5149018764496,
